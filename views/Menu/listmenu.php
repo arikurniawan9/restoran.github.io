@@ -5,7 +5,7 @@
 
     <div class="container">
         <a href="<?= $base_url?>menu/create">
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-start">
                 <button class="btn btn-success mb-2"><i data-feather="plus"></i>Add</button>
             </div>
         </a>

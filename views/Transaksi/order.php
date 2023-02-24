@@ -1,8 +1,8 @@
-<section class="home">
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 <div class="text"> Daftar Order</div>
 <div class="container">
     <?php foreach ($data['pilih'] as $edit) { ?>
-        <form action="<?= $base_url?>transaksi/create/" method="post">
+        <form action="<?= $base_url?>cart/create/" method="post">
             <div>
                 <label for="">Nama Menu</label>
                 <input type="text" name="idmenu" id="" value="<?= $edit['idmenu'] ?>" hidden>
@@ -22,4 +22,4 @@
         </form>
         <?php }?>
     </div>
-</div>
+    </main>

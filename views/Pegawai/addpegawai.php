@@ -1,4 +1,4 @@
-<section class="home">
+<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 <div class="text"> Daftar Pegawai</div>
 <div class="container">
         <form action="<?=$base_url?>pegawai/save" method="post">
@@ -38,4 +38,4 @@
             </div>
         </form>
     </div>
-</div>
+                    </main>

@@ -32,3 +32,42 @@
         </div>
     </div>
 </main>
+
+<div class="modal fade" id="modal-cart" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tambah Pesanan</h5>
+            </div>
+            <form action="<?= $base_url ?>cart/create" name="transaksi" method="post" id="form-transaksi">
+                <img type="hidden" class="img img-fluid" id="gambar-menu" name="gambar" />
+                <div class="modal-body">
+                    <div class="form-group mb-2">
+                        <label for="nama-menu">Nama Menu</label>
+                        <input type="text" class="form-control" id="input-nama-menu" name="namaMenu" readonly>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="harga">Harga</label>
+                        <input type="number" class="form-control" id="input-harga-menu" name="harga" readonly>
+                    </div>
+                    <div class="form-group mb-2">
+                        <label for="qty">Qty</label>
+
+                        <div class="col-md-5">
+                            <button class="btn btn-light border rounded-circle" onclick="totalClick(1)"><i class="fas fa-minus"></i></button>
+                            <input id="totalClicks" class="form-control w-25 d-inline text-center" name="qty" onfocus="startCalc()" onblur="stopCalc()" required>
+                            <button class="btn btn-light border rounded-circle" onclick="totalClick(-1)"><i class="fas fa-plus"></i></button>
+                        </div>
+                        <!-- <div class="form-group mb-2">
+                            <label for="subtotal">Subtotal</label>
+                            <input type="number" onfocus="startCalc()" onblur="stopCalc()" class="form-control" id="input-subtotal" name="subtotal" readonly>
+                        </div> -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Save Changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
